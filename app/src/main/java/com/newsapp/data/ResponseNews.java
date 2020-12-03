@@ -3,6 +3,7 @@ package com.newsapp.data;
 /**
  * Created by Lokesh Mudgal on 2/12/20.
  */
+//created this response class to handle api status and response type properly by view model
 public class ResponseNews<T> {
     T data;
     ResponseState state;

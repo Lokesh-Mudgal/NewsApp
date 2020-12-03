@@ -16,6 +16,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 /**
  * Created by Lokesh Mudgal on 1/12/20.
  */
+//created to initialize retrofit instance only once and to use everywhere
 @Module
 public final class NetworkModule {
     private final String baseUrl;

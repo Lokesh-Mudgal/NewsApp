@@ -28,6 +28,7 @@ public final class NewsApp extends Application {
 
         appContext = getApplicationContext();
 
+        //initializing dagger
         mainComponent = DaggerMainComponent.builder()
                 .appModule(new AppModule(this))
                 .networkModule(new NetworkModule(BuildConfig.NEWS_API_URL))
