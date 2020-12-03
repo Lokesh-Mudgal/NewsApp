@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+
+    <string name="api_failed_error">Sorry! Connection error. Try again</string>
+    <string name="by">by, %1$s</string>
+    <string name="published_on">published on -> %1$s</string>
+    <string name="description">Description</string>
+    <string name="content">Content</string>
+</resources>

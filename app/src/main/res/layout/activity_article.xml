@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+
+        <ImageView
+            android:id="@+id/iv_article"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@color/grey_C4C4C4"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:letterSpacing="0.125"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/iv_article"
+            app:layout_constraintStart_toStartOf="@id/iv_article"
+            app:layout_constraintTop_toBottomOf="@id/iv_article"
+            tools:text="Article" />
+
+        <TextView
+            android:id="@+id/tv_description_tag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:letterSpacing="0.125"
+            android:text="@string/description"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@id/tv_title"
+            app:layout_constraintStart_toStartOf="@id/tv_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+        <View
+            android:id="@+id/v_description_tag_divider"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/grey_C4C4C4"
+            app:layout_constraintEnd_toEndOf="@id/tv_description_tag"
+            app:layout_constraintStart_toStartOf="@id/tv_description_tag"
+            app:layout_constraintTop_toBottomOf="@id/tv_description_tag" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:letterSpacing="0.0125"
+            android:textColor="@color/grey_6C768F"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@id/tv_description_tag"
+            app:layout_constraintStart_toStartOf="@id/tv_description_tag"
+            app:layout_constraintTop_toBottomOf="@id/tv_description_tag"
+            tools:text="Description" />
+
+        <TextView
+            android:id="@+id/tv_content_tag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:letterSpacing="0.125"
+            android:text="@string/content"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@id/tv_description"
+            app:layout_constraintStart_toStartOf="@id/tv_description"
+            app:layout_constraintTop_toBottomOf="@id/tv_description" />
+
+        <View
+            android:id="@+id/v_content_tag_divider"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/grey_C4C4C4"
+            app:layout_constraintEnd_toEndOf="@id/tv_content_tag"
+            app:layout_constraintStart_toStartOf="@id/tv_content_tag"
+            app:layout_constraintTop_toBottomOf="@id/tv_content_tag" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:letterSpacing="0.0125"
+            android:textColor="@color/grey_6C768F"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@id/v_content_tag_divider"
+            app:layout_constraintStart_toStartOf="@id/v_content_tag_divider"
+            app:layout_constraintTop_toBottomOf="@id/v_content_tag_divider"
+            tools:text="Description" />
+
+        <TextView
+            android:id="@+id/tv_url"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:letterSpacing="0.0125"
+            android:textColor="@color/grey_6C768F"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@id/tv_content"
+            app:layout_constraintStart_toStartOf="@id/tv_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_content"
+            tools:text="link" />
+
+        <TextView
+            android:id="@+id/tv_author"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:letterSpacing="0.125"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/tv_url"
+            app:layout_constraintStart_toStartOf="@id/tv_url"
+            app:layout_constraintTop_toBottomOf="@id/tv_url"
+            tools:text="Author" />
+
+        <TextView
+            android:id="@+id/tv_published_at"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.125"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@id/tv_author"
+            app:layout_constraintStart_toStartOf="@id/tv_author"
+            app:layout_constraintTop_toBottomOf="@id/tv_author"
+            tools:text="12-10-20" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
